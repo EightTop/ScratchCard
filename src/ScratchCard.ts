@@ -55,7 +55,7 @@ class ScratchCard {
     // Create and add the canvas
     this.generateCanvas();
 
-    this.ctx = this._canvas.getContext('2d');
+    this.ctx = this._canvas.getContext('2d', { willReadFrequently: true }) as CanvasRenderingContext2D;
 
     // Init the brush instance
     this.brush = new Brush(this.ctx, this.position[0], this.position[1], this.config.imageBackgroundClippingPath);
