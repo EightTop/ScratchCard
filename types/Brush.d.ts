@@ -1,8 +1,11 @@
 export default class Brush {
     readonly ctx: CanvasRenderingContext2D;
+    private clippingPath?;
     mouseX: number;
     mouseY: number;
-    constructor(ctx: CanvasRenderingContext2D, mouseX: number, mouseY: number);
+    constructor(ctx: CanvasRenderingContext2D, mouseX: number, mouseY: number, clippingPath?: Path2D);
+    startClipping(): void;
+    endClipping(): void;
     updateMousePosition(x: number, y: number): void;
     circle(r: number): void;
     /**

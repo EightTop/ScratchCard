@@ -36,7 +36,6 @@ class ScratchCard {
       brushSrc: '',
       imageForwardSrc: './images/scratchcard.png',
       imageBackgroundSrc: './images/scratchcard-background.svg',
-      imageBackgroundClippingPath: undefined,
       htmlBackground: '',
       clearZoneRadius: 0,
       enabledPercentUpdate: true,
